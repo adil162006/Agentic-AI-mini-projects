@@ -1,0 +1,18 @@
+# Common
+node_modules/
+.env
+.DS_Store
+*.log
+
+# Backend specific
+backend/.env
+backend/node_modules/
+backend/startup_error.log
+backend/error.log
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/.vscode/
