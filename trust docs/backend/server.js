@@ -27,12 +27,12 @@ let documentMetadata = {};
 
 // Configure LlamaIndex
 Settings.llm = new Ollama({
-  model: "qwen2.5:1.5b-instruct",
+  model: "qwen2.5:7b-instruct",
   temperature: 0.3,
 });
 
 Settings.embedModel = new OllamaEmbedding({
-  model: "nomic-embed-text",
+  model: "mxbai-embed-large",
 });
 
 // Language-specific prompts for Indian languages and Hinglish support
