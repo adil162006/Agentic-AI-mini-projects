@@ -7,6 +7,8 @@ TrustDocs is an AI-powered platform designed to help people understand complex l
 - **PDF Analysis**: Upload any PDF document for instant processing.
 - **Explainable AI**: Translates complex terms into simple language.
 - **RAG-Powered Chat**: Ask specific questions and get answers cited directly from the document.
+- **Multilingual & Mixed Script Support**: Supports 9 Indian languages (Hindi, Tamil, Marathi, Malayalam, Bengali, Urdu, Assamese, Punjabi, English) and understands Hinglish/Tanglish.
+- **Text-to-Speech (TTS)**: Listen to summaries and answers in your preferred language.
 - **Risk Flagging**: Automatically identifies potential risks like high fees, auto-renewal clauses, or hidden penalties.
 - **Accessibility Centric**: Built for users with cognitive disabilities, low literacy, or limited English proficiency.
 
@@ -15,7 +17,8 @@ TrustDocs is an AI-powered platform designed to help people understand complex l
 - **Frontend**: React + Vite, Tailwind CSS, Lucide React (Icons).
 - **Backend**: Node.js + Express.
 - **AI Engine**: LlamaIndex (RAG Framework).
-- **LLM/Embeddings**: Local Ollama (Gemma 3:1b, Nomic-Embed-Text) or Google Gemini.
+- **LLM**: Ollama (`qwen2.5:7b-instruct`).
+- **Embeddings**: Ollama (`mxbai-embed-large`).
 
 ## 📁 Project Structure
 
@@ -30,24 +33,30 @@ trust docs/
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v18 or higher)
-- [Ollama](https://ollama.com/) (if running locally) or Google API Key
+- [Ollama](https://ollama.com/) (Required for local LLM)
 
 ### Backend Setup
 
-1. Navigate to the backend folder:
+1. **Install Ollama Models**:
+   Open a terminal and run:
+   ```bash
+   ollama pull qwen2.5:7b-instruct
+   ollama pull mxbai-embed-large
+   ```
+
+2. Navigate to the backend folder:
    ```bash
    cd backend
    ```
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    npm install
    ```
-3. Configure your configuration in `.env`:
+4. Configure your configuration in `.env`:
    ```env
-   GOOGLE_API_KEY=your_key_here
    PORT=3001
    ```
-4. Start the server:
+5. Start the server:
    ```bash
    npm run dev
    ```
