@@ -14,11 +14,15 @@ TrustDocs is an AI-powered platform designed to help people understand complex l
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React + Vite, Tailwind CSS, Lucide React (Icons).
-- **Backend**: Node.js + Express.
-- **AI Engine**: LlamaIndex (RAG Framework).
-- **LLM**: Ollama (`qwen2.5:7b-instruct`).
-- **Embeddings**: Ollama (`mxbai-embed-large`).
+![Tech Stack](frontend/public/Techstack.png)
+
+## 🔄 Process Flow
+
+![Process Flow Diagram](frontend/public/Process%20flow%20diagram.png)
+
+## 🏗️ System Architecture
+
+![System Architecture](frontend/public/System%20ARCHITECTURE.png)
 
 ## 📁 Project Structure
 
