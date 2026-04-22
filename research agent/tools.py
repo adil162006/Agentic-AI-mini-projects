@@ -38,5 +38,3 @@ def scrape_url(url: str) -> str:
         return f"Could not scrape URL: {str(e)}"
     
 
-
-print(scrape_url.invoke("https://today.ucsd.edu/story/is-artificial-general-intelligence-here"))
